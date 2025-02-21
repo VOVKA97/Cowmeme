@@ -1,0 +1,168 @@
+/* Общие стили для всего сайта */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Черный фон для всех страниц */
+    color: #fff; /* Белый цвет текста по умолчанию */
+    font-family: Arial, sans-serif;
+}
+
+/* Баланс в левом верхнем углу */
+.balance {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #ff00ff; /* Розовый фон для баланса */
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #00ff00; /* Кислотный зеленый текст */
+    font-weight: bold;
+}
+
+/* Иконка меню (три полоски) */
+.menu-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 4px;
+    background-color: #ff00ff; /* Розовый цвет полосок по умолчанию */
+    margin: 6px 0;
+    transition: background-color 0.5s; /* Плавный переход цвета */
+}
+
+.menu-icon:hover .bar {
+    background-color: #00ff00; /* Кислотный зеленый при наведении */
+}
+
+/* Выдвижная панель */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #1a001a; /* Темно-розовый оттенок для панели */
+    transition: right 0.3s;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ff00ff; /* Розовый фон кнопок */
+    border: none;
+    color: #00ff00; /* Кислотный зеленый текст */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: #00ff00; /* Кислотный зеленый фон при наведении */
+    color: #ff00ff; /* Розовый текст при наведении */
+}
+
+/* Социальные иконки внизу панели */
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1) hue-rotate(300deg); /* Розовый оттенок для иконок */
+}
+
+.social-icons a:hover img {
+    filter: brightness(0) invert(1) hue-rotate(120deg); /* Зеленый оттенок при наведении */
+}
+
+/* Основной контент */
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #00ff00; /* Кислотный зеленый для заголовков */
+    text-shadow: 0 0 5px #ff00ff; /* Розовая тень для эффекта */
+}
+
+p {
+    color: #ff00ff; /* Розовый цвет для текста */
+}
+
+/* Стили для страницы рефералов */
+input[type="text"] {
+    padding: 10px;
+    background-color: #1a001a; /* Темно-розовый фон поля ввода */
+    border: 2px solid #ff00ff; /* Розовая обводка */
+    color: #00ff00; /* Кислотный зеленый текст */
+    margin: 10px 0;
+}
+
+input[type="text"]::placeholder {
+    color: #00ff00; /* Зеленый цвет для placeholder */
+    opacity: 0.7;
+}
+
+button {
+    background-color: #ff00ff; /* Розовый фон кнопок */
+    color: #00ff00; /* Кислотный зеленый текст */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00ff00; /* Зеленый фон при наведении */
+    color: #ff00ff; /* Розовый текст при наведении */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    color: #ff00ff; /* Розовый цвет для списка рефералов */
+    margin: 5px 0;
+}
+
+/* Стили для страницы профиля */
+#avatar {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ff00ff; /* Розовая рамка вокруг аватара */
+    border-radius: 50%;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+    color: #00ff00; /* Зеленый текст для выбора файла */
+}
+
+/* Стили для страницы конкурса */
+a {
+    color: #ff00ff; /* Розовый цвет ссылок */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00ff00; /* Зеленый цвет при наведении */
+}
+

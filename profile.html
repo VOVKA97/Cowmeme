@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CowMeme - Профиль</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="balance" onclick="window.location.href='balance.html'">Баланс: <span id="coin-balance">0</span> монет</div>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <div class="sidebar" id="sidebar">
+        <button onclick="window.location.href='index.html'">Home</button>
+        <button onclick="window.location.href='referral.html'">Referral</button>
+        <button onclick="window.location.href='contest.html'">Contest</button>
+        <button onclick="window.location.href='profile.html'">Profile</button>
+        <div class="social-icons">
+            <a href="#" id="twitter-link"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="#" id="telegram-link"><img src="telegram-icon.png" alt="Telegram"></a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Профиль</h1>
+        <img src="default-avatar.png" id="avatar" alt="Аватар">
+        <input type="file" id="avatar-upload" onchange="changeAvatar()">
+        <p>Ник: <span id="nickname">User</span></p>
+        <input type="text" id="new-nickname" placeholder="Новый ник">
+        <button onclick="changeNickname()">Сменить ник</button>
+        <p>Баланс: <span id="coin-balance-profile">0</span> монет</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
